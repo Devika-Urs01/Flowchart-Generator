@@ -1,0 +1,34 @@
+graph LR
+    A[Home Page]
+    subgraph Navigation Bar
+        A --> B(Reference Documents)
+        A --> C(GPM Users)
+        A --> D(QC Page)
+        A --> E[Dashboard]
+        A --> F[Projects]
+        A --> G[Counterfeit]
+        A --> H[Admin]
+    end
+    subgraph Quick Access Forms
+        A --> I{Manufacturing Print Issue Form}
+        A --> J{Docman Form}
+        A --> K{Artwork Creation and GPM-Other Requests Form}
+    end
+    A --> L[Recent Activity Summary]
+
+    subgraph Reference Documents Page
+        B --> B1[Link to Document 1]
+        B --> B2[Link to Document 2]
+        B --> Bn[...]
+    end
+
+    subgraph GPM Users Page
+        C --> C1[View Tickets]
+        C --> C2[Assign Ticket to Self]
+        C --> C3[Change Ticket Status]
+    end
+
+    style E fill:#fff,stroke:#333,stroke-width:2px
+    style F fill:#fff,stroke:#333,stroke-width:2px
+    style G fill:#fff,stroke:#333,stroke-width:2px
+    style H fill:#fff,stroke:#333,stroke-width:2px
